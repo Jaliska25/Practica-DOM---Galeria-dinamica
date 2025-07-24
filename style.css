@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Tolkien';
+  src: url('fonts/tolkien.TTF') format('truetype');
+}
+
+:root {
+  --primary-font: 'Tolkien';
+  --second-font: 'The Nautigal', cursive;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*-------------- BODY -------------------*/
+body {
+  display: grid;
+  grid-template-columns: 12vw auto;
+  grid-template-rows: 50vh 1fr;
+  grid-template-areas:
+    'header header'
+    'menu  main';
+  background-color: rgb(246, 223, 194);
+}
+
+/*-------------------HEADER-----------------------*/
+header {
+  grid-area: header;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: fill;
+}
+
+/*-------------------ASIDE-----------------------*/
+#menu {
+  grid-area: menu;
+  display: flex;
+  background-color: rgb(214, 145, 61);
+  width: 12vw;
+  height: 100%;
+  justify-content: center;
+  border: black solid 1px;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+li {
+  font-family: var(--primary-font);
+  font-weight: bolder;
+  font-size: xx-large;
+  text-align: center;
+  margin: 8px;
+  padding: 20px;
+  list-style-type: none;
+  background-color: black;
+  color: goldenrod;
+  border-radius: 20%;
+  border: rgb(230, 174, 34) 3px solid;
+}
+
+li:hover {
+  background-color: #666;
+}
+
+@media (max-width: 1460px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  #menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: fit-content;
+    justify-content: center;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/*----------- MAIN ------------*/
+#main {
+  grid-area: main;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  background-color: rgb(246, 223, 194);
+  border: black solid 1px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 400px;
+  height: 500px;
+  border: black solid 1px;
+  background-color: rgb(210, 154, 11);
+  padding: 10px;
+  border-radius: 5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  perspective: 1000px;
+}
+
+/* -------- SHADOW EFFECT ----------*/
+.card.hover:not(.clicked) {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0.6, 0.6, 0.6);
+}
+
+/*--------- REVERSE EFFECT ---------*/
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card.clicked .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card-front {
+  background-color: burlywood;
+  border: 1px solid black;
+}
+
+.card-back {
+  background-color: #333;
+  color: goldenrod;
+  transform: rotateY(180deg);
+  font-family: var(--primary-font);
+  font-size: x-large;
+}
+
+/*---- TITLE OF EACH CARD-----*/
+h2 {
+  font-family: var(--primary-font);
+  font-size: x-large;
+  text-align: center;
+  margin-top: 5px;
+}
