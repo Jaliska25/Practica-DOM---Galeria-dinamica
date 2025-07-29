@@ -48,6 +48,8 @@ Here’s how some of the final design looks:
 
 <img width="1920" height="868" alt="Captura de pantalla 2025-07-29 135017" src="https://github.com/user-attachments/assets/5677b133-f04c-4954-8d4a-6e513e4daea3" />
 
+
+
 <img width="1920" height="872" alt="Captura de pantalla 2025-07-29 135244" src="https://github.com/user-attachments/assets/cbdacfba-b292-46ee-9f8a-83de8d29605c" />
 
 🚫 **Note:** This project was created as part of the master's program for educational purposes and to keep improving my JavaScript and layout skills.
