@@ -46,11 +46,12 @@ galeria-dinamica/
 ## 🖼️ Project preview
 Here’s how some of the final design looks:
 
-<img width="1920" height="1020" alt="Captura de pantalla 2025-09-03 202055" src="https://github.com/user-attachments/assets/3ea493c5-ed09-4556-a1ef-68660693da36" />
+
+<img width="1920" height="868" alt="Captura de pantalla 2025-09-03 202844" src="https://github.com/user-attachments/assets/3ed7ba1f-fe17-4553-aaf1-0cbb802ec798" />
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<img width="1920" height="1020" alt="Captura de pantalla 2025-09-03 202125" src="https://github.com/user-attachments/assets/c570df95-6872-4ff0-b814-3328c595f990" />
+<img width="1920" height="868" alt="Captura de pantalla 2025-09-03 202125" src="https://github.com/user-attachments/assets/cf69f1df-5cba-48e4-837e-bab5291bd259" />
 
 
 ## 🔗 Live Demo
